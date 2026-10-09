@@ -1,0 +1,13 @@
+numpy==2.0.2
+pandas==2.2.3
+neurokit2==0.2.13
+wfdb
+mne
+scipy
+tqdm
+patool
+pyarrow
+lightgbm
+scikit-learn
+shap
+matplotlib
