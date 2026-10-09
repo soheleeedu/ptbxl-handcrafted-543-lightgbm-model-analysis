@@ -15,8 +15,9 @@ Code and results for *Interpretable by construction: a CPU-only gradient-boostin
 
 ## Reproduce
 1. Download PTB-XL v1.0.3 from PhysioNet (`records500/`, `ptbxl_database.csv`, `scp_statements.csv`).
-2. Open `PTBXL_feature_extraction.ipynb`, set the paths in the CONFIG cell, run all (about 2 h on a 2-core CPU).
-3. Open `PTBXL_revision_experiments.ipynb`. It auto-detects the feature file, drops the seven label-derived columns, and runs every experiment with checkpoints in `_analysis_checkpoints/` (about 3 h in total on a 2-core CPU, resumable).
+   Link: https://physionet.org/content/ptb-xl/1.0.3/records100/#files-panel
+3. Open `PTBXL_feature_extraction.ipynb`, set the paths in the CONFIG cell, run all (about 2 h on a 2-core CPU).
+4. Open `PTBXL_revision_experiments.ipynb`. It auto-detects the feature file, drops the seven label-derived columns, and runs every experiment with checkpoints in `_analysis_checkpoints/` (about 3 h in total on a 2-core CPU, resumable).
 
 Fixed settings: LightGBM learning rate 0.05, up to 800 rounds, 63 leaves, min 40 samples per leaf, row subsample 0.9, column subsample 0.7, L2 5.0, seed 42, balanced class weights, early stopping patience 50 on the validation fold (fold 9, or fold 8 when the test fold is 9).
 
